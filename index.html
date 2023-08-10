@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <div>
+                <img src="https://pbs.twimg.com/media/FzW-8ZtaIAARsXa?format=jpg&name=small"
+                    alt="user" />
+            </div>
+            <div class="user-name">
+                <h2>Vaibhav Shrivastav</h2>
+            </div>
+            <div class="designation">
+                <h3>Web-Dev</h3>
+            </div>
+            <div class="bottom-group">
+                <button onclick="openmodal()" class="btn-share btn-card">
+                    <i class="fda-solid fa-share"></i>
+                    <div>share my profile</div>
+                </button>
+
+                <button class="btn-follow btn-card">Follow me</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Component -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div>
+                <i onclick="closemodal()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+
+
+        <div>
+            <h3>Share this via</h3>
+
+
+            <div class="icon-container">
+                <a href="https://www.facebook.com/vaibhavshrivastav.vaibhavshrivastav/" class="icon" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/VAIBHAV74208229" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/vaibhav_developer/" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="javascript:void(0);" class="icon" id="whatsapp" onclick="window.open(whatsappLink)">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="javascript:void(0);" class="icon" id="telegram" onclick="window.open(telegramLink)">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Overlayx -->
+    <div class="overlay" onclick="closemodal()"></div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
